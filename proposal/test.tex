@@ -1,9 +1,11 @@
 \documentclass[a4paper,12pt]{report}
 \usepackage{amsmath,amsfonts,amssymb,enumerate,graphicx}
-\usepackage{tabularx,float,xspace,float,caption}
+\usepackage{tabularx,float,xspace,float,caption,xcolor,setspace}
 \usepackage[top=1in, left = 1in, right = 0.5in, bottom = 0.5in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{lipsum}
 
+\renewcommand{\setstretch}{1.5}
 
 \parindent 0px
 \begin{document}
@@ -84,5 +86,9 @@
 \section*{Description}
 \section*{Software}
 \section*{Conclution}
-
+\lipsum[1]
+{\setstretch{1.0}\color{blue}
+\lipsum[2]
+}
+\lipsum[3]
 \end{document}
