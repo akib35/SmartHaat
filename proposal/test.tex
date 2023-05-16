@@ -1,38 +1,40 @@
 \documentclass[a4paper,12pt]{report}
-\usepackage{amsmath,amsfonts,amssymb,enumerate,graphicx}
+\usepackage{amsmath,amsfonts,amssymb,enumerate,graphicx,fancyhdr}
 \usepackage{tabularx,float,xspace,float,caption,setspace}
-\usepackage[top=1in, left = 1in, right = 0.5in, bottom = 0.5in]{geometry}
+\usepackage[top=2.5cm, left = 3cm, right = 1.5cm, bottom = 2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 
-
-
+\pagestyle{fancyplain}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0px}
+\fancyfoot[R]{\thepage}
 \parindent 0px
 \begin{document}
 
 \begin{titlepage}
-	\scshape
+
 	\centering
 
-	\includegraphics[width=3cm, keepaspectratio]{cuet.png} \par \vspace{0.1cm}
+	\includegraphics[width=3cm, keepaspectratio]{cuet.png} \par \vspace{0.5cm}
 	\begin{Large}
 		CHITTAGONG UNIVERSITY OF ENGINEERING \& TECHNOLOGY
 	\end{Large}
 	\par
-	\texttt{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}
+\vspace{.5cm}
+{DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING}
 \vspace{3cm}
 
-	\begin{tabular}{cc}
+\begin{tabular}{cl}
 		COURSE CODE : & CSE 326              \\
-		COURSE NAME : & INTERNET PROGRAMMING
+COURSE NAME : & INTERNET PROGRAMMING (SESSIONAL)
 	\end{tabular}
-	\vspace{1cm}
+\vspace{0.5cm}
 
 	\raisebox{-\baselineskip}{\rule{\textwidth}{1px}}
 	\rule{\textwidth}{1px}
 
-	\vspace{0.2cm}
-	{\Large{{project proposal on}}}\par \vspace{0.5cm}
-	\huge{{Scholarship Management System }}
+	{\Large{{Project Proposal On}}}\par \vspace{0.5cm}
+\huge{{A Website on Overseas Study and Research}}
 	\rule{\textwidth}{2px}
 
 \vspace{1cm}
@@ -45,7 +47,7 @@
 
 		\begin{tabular}{cl}
 			MD AKIB HASAN        & $(1904015)$ \\
-			K.M MAHBUB HOSSAIN   & $(1904017)$ \\
+			K.M MAHABUB HOSSAIN   & $(1904017)$ \\
 			SADMAN RAHMAN ANANTA & $(1904020)$ \\
 		\end{tabular}
 	}
@@ -57,21 +59,21 @@
 		\end{center}
 	}
 
-\vspace{1cm}
+\vspace{0.5cm}
 	supervised by
 
 	\parbox[l]{8cm}{\begin{center}
 
 			SABIHA ANAN\\
-			assistant professor\\
-			Department of CSE, CUET
+\footnotesize{assistant professor\\
+	Department of CSE, CUET}
 		\end{center}
 	}
 	\parbox[r]{8cm}{\begin{center}
 
 			MD RASHADUR RAHMAN\\
-			lecturer \\
-			Department of CSE, CUET
+\footnotesize{lecturer \\
+	Department of CSE, CUET}
 		\end{center}
 	}
 
@@ -82,34 +84,33 @@
 \onehalfspacing
 
 \section*{Name Of the Project}
-A2Z-Scholarship
+"The Scholar's Corner"
 \section*{Objectives}
 We want to establish a website that serves a portion of community who are interested in going abroad for higher studies, research or other kind of education purpose by --
 \begin{enumerate}[i.]
-	\item Giving a bunch of numbers of universities, colleges, and service institutions that provides opportunity for them.
-\item Skills such as essay writting needed by various institution to be accepted.
-\item the detailed process of getting scholarships from institutions.
-\item community platform for helping each other by providing uni-related queries.
-	\item give expert sugession about it.
+\item Providing a detailed descriptive way of getting admitted or recieved for research projects in universities, colleges, and technical institutions that provides opportunity for learners.
+\item Improving skills such as essay writting needed by various institution to be accepted.
+\item Offering real time instances of the process of getting scholarships from institutions.
+\item Inroducing community platform for helping each other by providing uni-related queries.
+\item Giving expert's sugession about it.
 \end{enumerate}
 \section*{Description}
-\subsection*{Motivation}
-People wants to study abroad. So we decided to built a website that helps with information about the institutions, the scholarships they provides, requirement skills, application process, passport-visa and other formalities, accomodation and other facility, and other opportunity related things. We can give sugessions based on the degrees, skillsets of a student where he/she should try.
-\subsection*{The idea}
-Our platform will have many functionality such as descriptive data, forums, Q/A section, blog by experts, essay correction and finally some real world examples with the good authority links. There will be feedback section and reviews from people who have got helpful information from here.
+People want to do research or study abroad to enhance their career. So a website that helps with information about the institutions, the opprptunities or scholarships they provides, requirement skills, application process, passport-visa and other formalities, accomodation and other facilities, and other opportunitiy related things would be much helpful. Sugessions based on the degrees, skillsets of a student where he/she should try in a same place is one of the necessity in our society.
+\subsection*{The Idea : Scope and Collaboration}
+Our platform will have many functionalities such as descriptive data, forums, Q/A section, blog by experts, essay correction and finally some real world examples with the good authority links. There will be feedback section and reviews from people who have recieved helpful information from here.
 
-\subsection*{The website}
-Our website contains sections based on the idea such as a list of colleges and universities that offers such kind of scholarship opportunities. Where the data can be sorted using basic criterias.
+\subsection*{The Website : Features and Functionality}
+Our website features contents based on the processes by which one can find a suitable research or scholarship offers from favourable institution.
 
-A fourm where users can post their problems, thoughts and moderators or experts can answer them.
+A chat system where anyone can ask their needs. And fourm where users can post their problems, thoughts and moderators or experts can answer them.
 
-There will be a blog section where expert people can give advice and opportunity. And a basic Q/A section where some answers of frequently asked questions and answers are available here.
+Furthermore, a blog section where expert people can give advice and sugessions. And a basic Q/A section where some answers of frequently asked questions and answers are available here.
 
-Modern universities requires some kind of special essay writting and we can give good sugession about it.
+Modern universities require some kind of special essay writting and we can give good sugessions about it.
 
 
-\section*{Software}
-The frameworks and languages we are supposed to use --
+\section*{Development Platfroms}
+The frameworks and language platforms we are supposed to use --
 \begin{itemize}
 	\item HTML
 	\item CSS
@@ -119,7 +120,7 @@ The frameworks and languages we are supposed to use --
 	\item FLUTTER , etc
 \end{itemize}
 
-\section*{Conclution}
-A goal without a plan is just a wish. One of the motive of our platfrom is to help those students mainly from undergrad level  wants to advance their career in abroad. Our next plan for the website is to provide some courses and combine the experts with students more and addition of subscription and AdSense in some pages.
+\section*{Conclusion}
+A goal without a plan is just a ship whitout a radar. One of the motives of our platfrom is to help those students mainly from undergrad level who wants to advance their career in abroad. Our next plan for the website is to provide some courses and connect the experts with students more and in addition of subscription and AdSense in some pages.
 
 \end{document}
