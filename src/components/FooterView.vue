@@ -1,7 +1,7 @@
 <template>
     <v-footer dark padless class="text-center">
         
-        <v-card flat tile color="black" class="white--text py-12 px-5" width="100%">
+        <v-card flat tile color="black" class="text-white py-12 px-5 mt-n6" width="100%">
             <v-row justify="center">
                 <v-col col="12" sm="4">
                     <v-card-text class="white--text pt-n3 mx-6" >

@@ -13,7 +13,7 @@
         <v-divider vertical class="ml-5"></v-divider>
 
         <div style="
-            position: absolute;
+            position:absolute;
             margin-left: auto;
             left: 0;
             margin-right: auto;
@@ -154,7 +154,9 @@
                 </v-col>                                 
                                         
           </v-row>
-          <v-btn color="blue" dark block tile>Sign Up</v-btn>
+          <v-btn :loading="loading" class="flex-grow-1" variant="tonal" color="blue" dark block tile @click="load">Sign Up</v-btn>
+          
+         
           <h5 class="text-center text-grey mt-4 mb-3"><span>Or Sign Up Using</span></h5>
          <div class="d-flex mt-10 mb-10 mx-10">
              <v-btn depressed outlined color="grey">
@@ -200,6 +202,19 @@
                             <v-row align="center" justify="center">
                                 <v-col cols="12" sm="12">
                                     <v-row>
+                                      <v-col
+                                      cols="12"
+                                      sm="12"
+                                    >
+                                      <v-select
+                                        :items="['Seller','Buyer']"
+                                        label="Account-Type*"
+                                        outlined dense color="blue"
+                                        required
+                                      ></v-select>
+                                    </v-col>
+                                    </v-row>
+                                    <v-row>
                                         <v-col cols="12" sm="6">
                                             <v-text-field label="Email" outlined dense color="blue" required class="mt-4"></v-text-field>
                                         </v-col>
@@ -218,9 +233,9 @@
                                         
                                     </v-row>
                                  </v-col>
-                                 <v-btn color="blue" dark block tile>Log In</v-btn>
+                                 <v-btn :loading="loading" class="flex-grow-1" variant="tonal" color="blue" dark block tile @click="load">Log In</v-btn>
                                  <h5 class="text-center text-grey mt-4 mb-3"><span>Or Log In Using</span></h5>
-                                 <div class="d-flex align-center mt-10 mb-10 mx-10" justify="space-between">
+                                 <div class="d-flex align-center justify-space-between mt-10 mb-10 mx-10">
                                     <v-btn depressed outlined color="grey">
                                         <v-icon color="red">mdi-google</v-icon>
                                     </v-btn>
@@ -269,6 +284,7 @@ export default {
     data:() =>({
         dialog:false,
         step:1,
+        loading :false,
     }),
     computed: {
       currentTitle () {
@@ -277,6 +293,12 @@ export default {
           case 2: return 'Sign-Up'
           default: return 'Account created'
         }
+      },
+    },
+    methods: {
+      load () {
+        this.loading = true
+        setTimeout(() => (this.loading = false), 3000)
       },
     },
 };
