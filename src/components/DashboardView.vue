@@ -63,7 +63,7 @@
         </carousel-3D>
         </div> -->
         <v-row>
-
+          
           <v-col cols="12" sm="3" class="mt-1 pr-0 white--text">
             <v-toolbar flat outlined>
               <v-toolbar-title><strong>Filter</strong></v-toolbar-title>
