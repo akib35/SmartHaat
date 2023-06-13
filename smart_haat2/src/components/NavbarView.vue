@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="blue-lighten-1">
+    <v-app-bar app color="blue-lighten-1" dark>
         
         
      <v-btn icon> <v-icon class="mx-1">mdi-menu</v-icon></v-btn>

@@ -8,7 +8,7 @@
                     <h3>Smart_Haat</h3>
                     </v-card-text>
                     <v-card-text class=" grey--text pt-0 mx-6" align=" center " >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias doloribus vitae deleniti? Corporis, delectus quidem!</v-card-text>
-                    <v-toolbar flat color=" transparent" justify="center ">
+                    <v-toolbar flat color=" transparent" justify="center">
                         <h5 class=" ml-4 ">Terms And Conditions</h5>
                         <h5 class=" text-center ml-4">Privacy Policy</h5>
                         <h5 class=" text-center ml-4">About Us</h5>
@@ -20,9 +20,11 @@
             <v-row justify="center">
             <v-col cols="12" sm="4">
                 <v-card-text class="pt-0">
-                    <v-btn v-for="icon in icons" :key="icon" class="mx-6, white--text" icon>
+                <div class="d-flex justify-space-between">
+                    <v-btn v-for="icon in icons" :key="icon" icon>
                         <v-icon size="24px" justify="center">{{icon}}</v-icon>
                     </v-btn>
+                    </div>
                 </v-card-text>
             </v-col>
             </v-row>
