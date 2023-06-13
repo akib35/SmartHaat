@@ -1,11 +1,11 @@
 <template>
   <v-container fluid>
-    <v-card
-      color="#3853D8"
+    <!-- <v-card
+      color="blue-lighten-5"
       height="150px"
       title
       flat
-      class="d-flex align-center justify-center"
+      class="d-flex align-center justify-center light"
       light
     >
       <v-row>
@@ -18,17 +18,17 @@
           </v-breadcrumbs>
         </v-col>
       </v-row>
-    </v-card>
-    <v-card tile class="text-xs-center mx-16 mt-0 card1" color="white">
+    </v-card> -->
+    <v-card tile class="text-xs-center mx-2 mt-n6 card1" color="white">
       <v-layout row wrap>
         <v-flex cols-12>
           <v-carousel
             cycle
             class="carousel"
             hide-delimiter-background=""
-            height="500px"
+            height="700px"
             show-arrows="hover"
-            style="width: 1360px"
+            style="width: 1472px"
           >
             <v-carousel-item
               v-for="(img, i) in imgs"
@@ -72,8 +72,8 @@
         </carousel-3D>
         </div> -->
       <v-row>
-        <v-col cols="12" sm="3" class="mt-0 pr-0 white--text">
-          <v-toolbar flat outlined>
+        <v-col cols="12" sm="3" class="mt-0 pr-0 text-white">
+          <v-toolbar VToolbar border class="bg-white">
             <v-toolbar-title><strong>Filter</strong></v-toolbar-title>
 
             <v-divider vertical></v-divider>
@@ -84,30 +84,29 @@
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="3" class="mt-0 px-0">
-          <v-toolbar flat outlined>
+          <v-toolbar VToolbar border class="bg-white">
             <v-toolbar-title> Sort By:<span>Price</span></v-toolbar-title>
 
-            <v-divider vertical></v-divider>
+            
             <v-btn icon class="button">
               <v-icon color="black"> mdi-menu-down </v-icon>
             </v-btn>
-            <v-divider vertical></v-divider>
+           
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="3" class="mt-0 px-0">
-          <v-toolbar flat outlined class="">
+          <v-toolbar class="bg-white" VToolbar border>
             <v-toolbar-title> Show:</v-toolbar-title>
 
-            <v-divider vertical></v-divider>
+            
             <v-btn icon class="button">
               <v-icon color="black"> mdi-menu-down </v-icon>
             </v-btn>
-            <v-divider vertical></v-divider>
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="3" class="mt-0 pl-0">
-          <v-toolbar flat outlined>
-            <v-divider vertical></v-divider>
+          <v-toolbar VToolbar border class="bg-white">
+           
             <v-btn icon class="button">
               <v-icon color="#3853D8"> mdi-apps </v-icon>
             </v-btn>
@@ -115,24 +114,24 @@
             <v-btn icon class="button">
               <v-icon color="grey">mdi-format-list-bulleted</v-icon>
             </v-btn>
-            <v-divider vertical></v-divider>
+            
             <v-toolbar-title> compare:</v-toolbar-title>
             <v-spacer></v-spacer>
           </v-toolbar>
-          <v-divider horizontal></v-divider>
+          
         </v-col>
         <v-col cols="3" class="py-0 pr-0 mt-n3">
-          <v-card flat outline tile class="ma-0">
-            <v-toolbar flat>
+          <v-card variant="outlined" tile class="ma-0">
+            <v-toolbar VToolbar border>
               <v-icon color="black" class="button">mdi-chevron-down</v-icon>
-              <v-divider vertical></v-divider>
+              
               <div class="margin">
                 <strong>Categories</strong>
               </div>
               <v-spacer></v-spacer>
               <v-icon color=" black " small class="cross">mdi-close</v-icon>
             </v-toolbar>
-            <v-list dense class="mt-n5">
+            <v-list dense class="mt-n5" border>
               <v-list-item v-for="style in styles" :key="style.title">
                 <v-list-item-comment
                   v-text="style.title"
@@ -144,15 +143,15 @@
               </v-list-item>
             </v-list>
           </v-card>
-          <v-divider horizontal></v-divider>
-          <v-card flat outline tile>
-            <v-toolbar flat>
+         
+          <v-card variant="outlined" tile>
+            <v-toolbar VToolbar border>
               <v-icon color="black" class="button">mdi-chevron-down</v-icon>
               <strong>PRICE</strong>
               <v-spacer></v-spacer>
               <v-icon color="black" small class="cross">mdi-close</v-icon>
             </v-toolbar>
-            <v-toolbar flat>
+            <v-toolbar VToolbar border>
               <v-text-field
                 placeholder="$2000"
                 filled
@@ -170,15 +169,14 @@
             </v-toolbar>
             <v-slider color="blue" max="30" min="0"></v-slider>
           </v-card>
-          <v-divider horizontal></v-divider>
-          <v-card flat outline tile>
-            <v-toolbar flat class="text-center">
+          <v-card variant="outlined" tile>
+            <v-toolbar VToolbar border class="text-center">
               <v-icon color="black" class="button">mdi-chevron-down</v-icon>
               <strong>FARMS</strong>
               <v-spacer></v-spacer>
               <v-icon color="black" small class="cross">mdi-close</v-icon>
             </v-toolbar>
-            <v-list dense class="mt-n5">
+            <v-list dense class="mt-n5" border>
               <v-list-item v-for="farm in farms" :key="farm.title">
                 <v-list-item-content>
                   <v-list-item-title v-text="farm.title" class="ml-6"></v-list-item-title>
@@ -189,8 +187,8 @@
               </v-list-item>
             </v-list>
           </v-card>
-          <v-card flat outline tile class="ma-0">
-            <v-toolbar flat>
+          <v-card variant="outlined" tile class="ma-0">
+            <v-toolbar VToolbar border>
               <v-icon color="black" class="button">mdi-chevron-down</v-icon>
               <v-divider vertical></v-divider>
               <div class="margin">
@@ -207,13 +205,13 @@
                 text-color="black"
                 class="ml-2"
               ></v-chip>
-              <v-chip filter outlined color="#FF0000" text-color="black"></v-chip>
+              <v-chip filter border color="#FF0000" text-color="black"></v-chip>
               <v-chip filter outlined color="#000000" text-color="red"></v-chip>
               <v-chip filter outlined color="#808080" text-color="black"></v-chip>
             </v-chip-group>
           </v-card>
-          <v-card flat outline tile class="ma-0">
-            <v-toolbar flat>
+          <v-card variant="outlined" tile class="ma-0">
+            <v-toolbar VToolbar border>
               <v-icon color="black" class="button">mdi-chevron-down</v-icon>
               <v-divider vertical></v-divider>
               <div class="margin">
@@ -222,7 +220,7 @@
               <v-spacer></v-spacer>
               <v-icon color="black" small class="cross">mdi-close</v-icon>
             </v-toolbar>
-            <v-list dense class="mt-n5">
+            <v-list dense class="mt-n5" border>
               <v-list-item v-for="district in districts" :key="district.title">
                 <v-list-item-content>
                   <v-list-item-title
@@ -237,7 +235,7 @@
             </v-list>
           </v-card>
         </v-col>
-        <v-col cols="9" class="mt-3">
+        <v-col cols="9" class="mt-n3">
           <v-row class="fill-height" align="center" justify="center">
             <v-col
               cols="12"
@@ -248,30 +246,45 @@
             >
             <div>
               <v-hover v-slot="{ isHovering, props }">
-                <v-card height="300" justify="center" v-bind="props" flat outline tile>
+                <v-card height="389" justify="center" v-bind="props"  variant="outlined" tile>
                   <v-card-actions>
                     <v-spacer></v-spacer>
                     <v-btn color="black" small dark>{{ cattle.sold }}</v-btn>
                   </v-card-actions>
-                  <v-img src="Cow-5.jpg" width="200" height="200" cover>
+                  <v-img src="Cow-5.jpg" width="auto" height="240" justify="center" cover>
                     <v-expand-transition>
                     <div
                       v-if="isHovering"
                       class="d-flex transition-fast-in-fast-out bg-blue-lighten-3 v-card--reveal display-3 text-white"
                       style="height: 100%"
                     >
+                      <V-row>
+                      <V-col cols="12">
                       <v-btn rounded color="white">
                         <v-icon>mdi-cart-outline</v-icon>
                       </v-btn>
                       <v-btn fab small color="white" class="ml-2">
                         <v-icon color="black">mdi-heart-outline</v-icon>
                       </v-btn>
+                      </V-col>
+                      <v-col cols="12"> <v-btn rounded>More Info</v-btn></v-col>
+                      </V-row>
                     </div>
                   </v-expand-transition>
                   </v-img>
-                  <v-card-text class="mx-auto pt-6">
-                    <strong :elevation="isHovering ? 'red--text' : 'black--text'" :class="{'on-hover': isHovering}" justify="center">{{
+                  <v-card-text class="mx-auto pt-0">
+                    <strong :elevation="isHovering ? 'text-red' : 'text-black'" :class="{'on-hover': isHovering}" justify="center">{{
                       cattle.title
+                    }}</strong>
+                  </v-card-text>
+                  <v-card-text class="mx-auto pt-0">
+                    <strong :elevation="isHovering ? 'text-red' : 'text-black'" :class="{'on-hover': isHovering}" justify="center">{{
+                      cattle.price
+                    }}</strong>
+                  </v-card-text>
+                  <v-card-text class="mx-auto pt-0">
+                    <strong :elevation="isHovering ? 'text-red' : 'text-black'" :class="{'on-hover': isHovering}" justify="center">{{
+                      cattle.weight
                     }}</strong>
                   </v-card-text>
                 </v-card>
@@ -281,7 +294,7 @@
           </v-row>
         </v-col>
         <v-col cols="12" sm="3" class="mt-n3 px-0 pb-0">
-          <v-toolbar flat outlined>
+          <v-toolbar VToolbar border>
             <v-btn icon class="mr-1">
               <v-icon color="grey">mdi-chevron-up</v-icon>
             </v-btn>
@@ -289,12 +302,12 @@
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="6" class="mt-n3 px-0 pb-0">
-          <v-toolbar flat outlined class="text-center">
+          <v-toolbar VToolbar border class="text-center">
             <v-pagination v-model="page" :length="7"></v-pagination>
           </v-toolbar>
         </v-col>
         <v-col cols="12" sm="3" class="mt-n3 pl-0 pb-0">
-          <v-toolbar flat outlined>
+          <v-toolbar VToolbar border>
             <v-btn icon class="mr-1">
               <v-icon color="grey">mdi-chevron-down</v-icon>
             </v-btn>
@@ -304,12 +317,13 @@
       </v-row>
     </v-card>
     <v-card
-      color="#EFF0F2"
+      color="grey-dark"
       height="250px"
       tile
       flat
       dark
       class="d-flex justify-center mt-0 card2"
+
     >
       <v-row>
         <v-col cols="12" sm="12">
@@ -496,21 +510,19 @@ export default {
         image: "1.png",
         title: "Bl 8",
         price: "$2000.00",
+        weight: "290 KG"
       },
-      { class: "pa-0", sold: "-20%", image: "2.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-28%", image: "3.png", title: "Bl 6", price: "$2000.00" },
-      { class: "pa-0", sold: "-30%", image: "4.png", title: "Bl 5", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "5.png", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "6.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "7.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "8.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "9.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "10.jpg", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "11.png", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "12.png", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "13.png", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "14.png", title: "Bl 4", price: "$2000.00" },
-      { class: "pa-0", sold: "-20%", image: "15.png", title: "Bl 4", price: "$2000.00" },
+      { class: "pa-0", sold: "-20%", image: "2.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-28%", image: "3.png", title: "Bl 6", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-30%", image: "4.png", title: "Bl 5", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "5.png", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "6.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "7.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "8.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "9.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG"},
+      { class: "pa-0", sold: "-20%", image: "10.jpg", title: "Bl 4", price: "$2000.00" , weight: "290 KG" },
+      { class: "pa-0", sold: "-20%", image: "11.png", title: "Bl 4", price: "$2000.00" , weight: "290 KG" },
+      { class: "pa-0", sold: "-20%", image: "12.png", title: "Bl 4", price: "$2000.00" , weight: "290 KG" },
     ],
   }),
 };
@@ -560,5 +572,8 @@ export default {
 }
 .cross:hover {
   background-color: red;
+}
+.light{
+  opacity: 0.3s ;
 }
 </style>

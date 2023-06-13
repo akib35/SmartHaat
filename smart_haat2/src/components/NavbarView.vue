@@ -1,27 +1,30 @@
 <template>
     <v-app-bar app color="#3853D8" dark>
-        <v-btn icon>
-            <v-icon class="mx-1">mdi-magnify</v-icon>
-        </v-btn>
-        <v-divider vertical></v-divider>
+        
+        
      <v-btn icon> <v-icon class="mx-1">mdi-menu</v-icon></v-btn>
             <v-divider vertical></v-divider>
                 <div class="mx-1">
-                    <strong>Category</strong>
+                    <strong>Smart Haat</strong>
                 </div>
 
         <v-divider vertical class="ml-5"></v-divider>
-
-        <div style="
-            position:absolute;
-            margin-left: auto;
-            left: 0;
-            margin-right: auto;
-            right: 0;
-            text-align: center;
-          ">
-            <h4 class="mx-1">SmartHaat</h4>
-        </div>
+        <V-spacer></V-spacer>
+        <v-responsive class="text-black bg-white" max-width="344">
+          <v-text-field
+          :loading="loading"
+          density="compact"
+            hide-details
+            label="Search"
+            placeholder="Search for cattle, farms and more"
+            type="search"
+            append-inner-icon="mdi-magnify"
+            single-line
+            @click:append-inner="load"
+          >
+          </v-text-field>
+        </v-responsive>
+      
         <v-spacer></v-spacer>
         <v-divider vertical></v-divider>
         <v-dialog
@@ -284,6 +287,7 @@ export default {
     data:() =>({
         dialog:false,
         step:1,
+        loaded: false,
         loading :false,
     }),
     computed: {
@@ -298,10 +302,12 @@ export default {
     methods: {
       load () {
         this.loading = true
-        setTimeout(() => (this.loading = false), 3000)
+        setTimeout(() => (this.loading = false,
+                          this.loaded = true
+                          ), 2500)
       },
     },
-};
+  }
 </script>
 <style>
 .v-toolbar_title {
