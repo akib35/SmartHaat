@@ -149,7 +149,7 @@
           <small>*indicates required field</small>
           <v-row>
             <v-col cols="12" sm="7">
-                 <v-checkbox label="I Accept All Terms & Condition" class="mt-3 ml-0" color="blue"
+                 <v-checkbox label="I Accept All Terms & Condition" class="mt-3 ml-0 d-flex justify-start" color="blue"
                  ></v-checkbox>
                 </v-col>
                 <v-col cols="12" sm="5" class="mt-6">
@@ -162,15 +162,21 @@
          
           <h5 class="text-center text-grey mt-4 mb-3"><span>Or Sign Up Using</span></h5>
          <div class="d-flex mt-10 mb-10 mx-10">
-             <v-btn depressed outlined color="grey">
+            <v-col cols="auto">
+             <v-btn color="white" class="elevation-6">
                  <v-icon color="red" class="mx-1">mdi-google</v-icon>
             </v-btn>
-            <v-btn depressed outlined color="grey">
+            </v-col>
+            <v-col cols="auto">
+            <v-btn color="white" class="elevation-6">
                  <v-icon color="blue" class="mx-1">mdi-facebook</v-icon>
              </v-btn>
-            <v-btn depressed outlined color="grey">
+             </v-col>
+             <v-col cols="auto">
+            <v-btn color="white" class="elevation-6">
                  <v-icon color="light-blue lighten-3" class="mx-1">mdi-twitter</v-icon>
             </v-btn>
+            </v-col>
         </div>
           </v-row>
         </v-card-text>
@@ -239,15 +245,21 @@
                                  <v-btn :loading="loading" class="flex-grow-1" variant="tonal" color="blue" dark block tile @click="load">Log In</v-btn>
                                  <h5 class="text-center text-grey mt-4 mb-3"><span>Or Log In Using</span></h5>
                                  <div class="d-flex align-center justify-space-between mt-10 mb-10 mx-10">
-                                    <v-btn depressed outlined color="grey">
+                                 <v-col cols="auto">
+                                    <v-btn color="white" class="elevation-6">
                                         <v-icon color="red">mdi-google</v-icon>
                                     </v-btn>
-                                    <v-btn depressed outlined color="grey">
+                                    </v-col>
+                                    <v-col cols="auto">
+                                    <v-btn color="white" class="elevation-6">
                                         <v-icon color="blue">mdi-facebook</v-icon>
                                     </v-btn>
-                                    <v-btn depressed outlined color="grey">
+                                    </v-col>
+                                    <v-col cols="auto">
+                                    <v-btn color="white" class="elevation-6">
                                         <v-icon color="light-blue lighten-3">mdi-twitter</v-icon>
                                     </v-btn>
+                                    </v-col>
                                 </div>
                             </v-row>
                         </v-card-text>
