@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar app color="blue-lighten-1" dark>
+    <v-app-bar app color="blue-lighten-1">
         
         
      <v-btn icon> <v-icon class="mx-1">mdi-menu</v-icon></v-btn>
@@ -281,7 +281,8 @@
       </v-card>
       </v-dialog>
         <v-divider vertical></v-divider>
-        <v-btn icon class="mx-1">
+        <v-btn icon class="mx-1" 
+        stacked>
             <v-badge color="#94D0EF" content="0">
                 <v-icon>mdi-cart-outline</v-icon>
             </v-badge>
