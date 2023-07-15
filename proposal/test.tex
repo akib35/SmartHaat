@@ -30,7 +30,7 @@
 
 \vspace{0.2cm}
 {\Large{{EXPERIMENT NAME}}}\par \vspace{0.3cm}
-\huge{{Completion of home, signin and signup page  of "SmartHaat" Website}}
+\huge{{Completion of the home page and cart pages of "SmartHaat" Website}}
 	\rule{\textwidth}{2px}
 
 \vspace{0.5cm}
@@ -39,8 +39,8 @@
 \begin{tabular}{cl}
 COURSE CODE        & : CSE 326                          \\
 COURSE NAME        & : INTERNET PROGRAMMING (SESSIONAL) \\
-EXPERIMENT NO      & : 03                               \\
-DATE OF SUBMISSION & : 14 -- 06 -- 2023
+EXPERIMENT NO      & : 04                               \\
+DATE OF SUBMISSION & : 12 -- 07 -- 2023
 \end{tabular}
 \vspace{0.5cm}
 
@@ -88,90 +88,42 @@ DATE OF SUBMISSION & : 14 -- 06 -- 2023
 \onehalfspacing
 
 \section*{Experiment Name}
-Completion of home, signin and signup page  of "SmartHaat" Website
+Completion of the home page and cart pages of Website
 \section*{Objectives}
 \begin{itemize}
-	\item Designing of home page with footer and search bar etc.
-	\item To design login and signup page.
-	\item Design the Data Base (making ER Diagram, doing Relational Mapping and Normalization).
+\item Improving functionalities of home page.
+\item Setting up navigation drawer and cart page.
+\item verification of login/signup and dark theme.
 \end{itemize}
 \section*{Description}
-The modified design of home page along with new features are introduced after the last labwork where basic format of home page were developed.
+The functionalities of home page is improved by implementing many features such as navigation drawer. A navigation drawer is basically a button that pops up a slider on clicked and shows various types of links of website. Our navigation drawer contains \emph{home, farm, sell, help, blog and butcher} pages as well as customized icons.
 \begin{figure}[H]
-	\includegraphics[keepaspectratio, width=\linewidth ]{coursel1.png}
-	\caption{home page carousel}
-	\label{coursel1}
+\centering
+\includegraphics[keepaspectratio, width=10cm]{one.png}
+\caption{Navigation drawer}
+\label{drawer}
 \end{figure}
-\begin{figure}[]
-	\includegraphics[keepaspectratio, width=\linewidth ]{coursel2.png}
-	\caption{home page carousel of experts}
-	\label{coursel2}
-\end{figure}
-The first feature added in the home or main page is the carousel of different links such as,
-\begin{itemize}
-	\item livestock page
-	\item cattle sale for farmars
-	\item farms and their products
-	\item experts suggession
-	\item learn from scholars
-	\item upload and register
-	\item butcher service
-\end{itemize}
-From the figure \ref{coursel1} which shows the scholar opinion page and figure \ref{coursel2} shows the verified expertise people are included here as an example.
-In the home page the search button is also added for searching items in the webpage.
-
-\begin{figure}[]
-	\includegraphics[keepaspectratio, width=\linewidth]{footer.png}
-	\caption{home page footer}
-	\label{footer}
-\end{figure}
-Then we improved our home page with suitable footer which is  is added which includes,
-\begin{itemize}
-	\item email subscription box
-	\item social media links
-	\item site roadmap links etc.
-\end{itemize}
-From the figure \ref{footer} the listed items are visible.
-
-\begin{figure}[]
-	\includegraphics[keepaspectratio, width=\linewidth]{signin.png}
-	\caption{login frame}
-	\label{login}
-\end{figure}
-\begin{figure}[]
-	\includegraphics[keepaspectratio , width=\linewidth]{signup.png}
-	\caption{signup page}
-	\label{signup}
-\end{figure}
-
-Furthermore, there are login and signin option shown in figure \ref{login} and figure \ref{signup} where data fields are created for taking data from user and perform the task. There is a close button at the bottom of the page in case we want to exit.
-
+A new theme setting is also added. Now a days themes are one of the most desired feature of a modern websites. And \emph{Toggle theme} button does the job here.
 \begin{figure}[H]
-	\includegraphics[keepaspectratio, width=\linewidth]{body.png}
-	\caption{body section with shaded area and cart button}
-	\label{body}
+\centering
+\includegraphics[keepaspectratio, width=10cm]{two.png}
+\caption{Toggle theme}
+\label{theme}
 \end{figure}
-The middle section of the home page is also improved by using shaded graphics and some buttons such as cart and wishlist.
-
-
-
-Finally the relational mapping of our project is shown in figure \ref{mapping}. There are several tables in the diagram such as, 
-\begin{itemize}
-	\item customer
-	\item login
-	\item seller
-	\item product
-	\item butcher
-	\item farms
-	\item order, etc.
-\end{itemize}
-\begin{figure}
-	\includegraphics[keepaspectratio, width=\linewidth]{smartHattdbmapping.png}
-	\caption{relational mapping of database}
-	\label{mapping}
+The cart system is an improtant feature of an online selling websites. Thus the cart system is added here for customers. Here the user have to click the \emph{add to cart} button positioned beside every item. Finally in the \emph{my cart} page user can see the items added to be bought.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=10cm]{three.png}
+\caption{Toggle theme}
+\label{cart}
 \end{figure}
- Among these tables there are relation between them which are converted to mapping by transferring the primart key as foreign key etc. Such as an unique customer ID is a foreign key in login, order, wishlist, butcher order etc. tables. And unique product ID is also found in order, wishlist, cart tables. Similarly, there is relation between product and seller and the seller ID is included in porduct tables.
-
+Some more features of the home page have also been activated such as slide ranger, through which we can easily sort out the items easily.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=10cm]{four.png}
+\caption{Slide-ranger}
+\label{slideranger}
+\end{figure}
 \section*{Development Platfroms}
 The frameworks and language platforms we used --
 \begin{itemize}
@@ -182,6 +134,5 @@ The frameworks and language platforms we used --
 \end{itemize}
 
 \section*{Conclusion}
-In this week we started to devlop our home page with it's funtionalities and features. The header part was improved and footer was added. The login and signup page was introduced. There was an import problem for which we couldn't show the relational mapping last week. So, we included this part here with good quality image resolution.
-
+This week we improved our home page with it's funtionalities and features. New cart system was developed. The login and signup page was made functional. Dark themes with other options were added. Due to some difficulties the database could not be added successfully and thats why the actual functions are not available.
 \end{document}
