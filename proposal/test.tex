@@ -30,7 +30,7 @@
 
 \vspace{0.2cm}
 {\Large{{EXPERIMENT NAME}}}\par \vspace{0.3cm}
-\huge{{Completion of the home page and cart pages of "SmartHaat" Website}}
+\huge{{Completion of other pages and initialization of the database of ``SmartHaat" Website}}
 	\rule{\textwidth}{2px}
 
 \vspace{0.5cm}
@@ -39,8 +39,8 @@
 \begin{tabular}{cl}
 COURSE CODE        & : CSE 326                          \\
 COURSE NAME        & : INTERNET PROGRAMMING (SESSIONAL) \\
-EXPERIMENT NO      & : 04                               \\
-DATE OF SUBMISSION & : 12 -- 07 -- 2023
+EXPERIMENT NO      & : 05                               \\
+DATE OF SUBMISSION & : 19 -- 07 -- 2023
 \end{tabular}
 \vspace{0.5cm}
 
@@ -51,7 +51,7 @@ DATE OF SUBMISSION & : 12 -- 07 -- 2023
 
 		\begin{tabular}{cl}
 			MD AKIB HASAN        & $(1904015)$ \\
-			K.M MAHABUB HOSSAIN  & $(1904017)$ \\
+K.M. MAHABUB HOSSAIN & $(1904017)$ \\
 			SADMAN RAHMAN ANANTA & $(1904020)$ \\
 		\end{tabular}
 	}
@@ -88,51 +88,52 @@ DATE OF SUBMISSION & : 12 -- 07 -- 2023
 \onehalfspacing
 
 \section*{Experiment Name}
-Completion of the home page and cart pages of Website
+Completion of other pages and initialization of the database of ``SmartHaat" Website.
 \section*{Objectives}
 \begin{itemize}
-\item Improving functionalities of home page.
-\item Setting up navigation drawer and cart page.
-\item verification of login/signup and dark theme.
+\item Building Shipment and other pages.
+\item Improvements in showing data of products.
+\item Implementing database and connection establishment.
 \end{itemize}
 \section*{Description}
-The functionalities of home page is improved by implementing many features such as navigation drawer. A navigation drawer is basically a button that pops up a slider on clicked and shows various types of links of website. Our navigation drawer contains \emph{home, farm, sell, help, blog and butcher} pages as well as customized icons.
+A websites compatibility and efficiency depends on quick response to the user and providing them hassle-free service. Therefore, we implemented lots of modules as card and other way instead of new pages.
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=10cm]{one.png}
-\caption{Navigation drawer}
-\label{drawer}
+\includegraphics[keepaspectratio, width=12cm]{pop_up.png}
+\caption{Pop up view of see more page}
+\label{popup}
 \end{figure}
-A new theme setting is also added. Now a days themes are one of the most desired feature of a modern websites. And \emph{Toggle theme} button does the job here.
+The pop-up view is created  to show the more information about the product. So, the user can browse the products without changing the page and follow its specification as well as bookmark and cart it.
+
+The shipping page includes receivers name, location, authentication and other the shipping information for an order. It is shown after confirming order. And other shipment status are shown in the user's page where they can track their previous orders too.
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=10cm]{two.png}
-\caption{Toggle theme}
-\label{theme}
+\includegraphics[keepaspectratio, width=12cm]{shipping.png}
+\caption{Shipping page}
+\label{shipping}
 \end{figure}
-The cart system is an improtant feature of an online selling websites. Thus the cart system is added here for customers. Here the user have to click the \emph{add to cart} button positioned beside every item. Finally in the \emph{my cart} page user can see the items added to be bought.
+Like any other e-commerce website, our website requires a database system to track users information, seller and theirs products' information, selling status and other authenticating information. To incorporate with the Vue framework, a general database system with rest API are initialized. Where we need to create APIs to communicate from webpage with database.
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=10cm]{three.png}
-\caption{Toggle theme}
-\label{cart}
+\includegraphics[keepaspectratio, width=12cm]{db.png}
+\caption{Database initialization}
+\label{db}
 \end{figure}
-Some more features of the home page have also been activated such as slide ranger, through which we can easily sort out the items easily.
-\begin{figure}[H]
-\centering
-\includegraphics[keepaspectratio, width=10cm]{four.png}
-\caption{Slide-ranger}
-\label{slideranger}
-\end{figure}
-\section*{Development Platfroms}
+Here the main tables to perform a static view of our website are created initially which can be seen in figure \ref{db}. It contains many tables such as products, seller, customer and login tables with necessary relations.
+
+
+\section*{Development Platforms}
 The frameworks and language platforms we used --
 \begin{itemize}
 	\item HTML
 	\item CSS
-	\item JAVASCRIPT
+\item JavaScript
 	\item VUE
+\item Django REST API
+\item Sqlite3
 \end{itemize}
 
 \section*{Conclusion}
-This week we improved our home page with it's funtionalities and features. New cart system was developed. The login and signup page was made functional. Dark themes with other options were added. Due to some difficulties the database could not be added successfully and thats why the actual functions are not available.
+A website needs to have less distraction and in time delivery of the needs to the customer. Therefore, easy and quick responsive pages are built for our website.
+This week we improved our home page with few more functionalities and features. The shipment page took a bit of difficulty, but it was solved finally. And the database we created is in initial state and the data can't be accessed without proper APIs and that's why the actual functions are not available.
 \end{document}
