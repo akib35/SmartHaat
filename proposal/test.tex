@@ -30,7 +30,7 @@
 
 \vspace{0.2cm}
 {\large{{EXPERIMENT NAME}}}\par \vspace{0.3cm}
-\Large{{Completion of other pages and initialization of the database of ``SmartHaat" Website}}
+\Large{{Completion of other pages and  database of ``SmartHaat" Website.}}
 	\rule{\textwidth}{2px}
 
 \vspace{0.5cm}
@@ -39,8 +39,8 @@
 \begin{tabular}{cl}
 COURSE CODE        & : CSE 326                          \\
 COURSE NAME        & : INTERNET PROGRAMMING (SESSIONAL) \\
-EXPERIMENT NO      & : 05                               \\
-DATE OF SUBMISSION & : 19 -- 07 -- 2023
+EXPERIMENT NO      & : 06                               \\
+DATE OF SUBMISSION & : 02 -- 08 -- 2023
 \end{tabular}
 \vspace{0.5cm}
 
@@ -88,38 +88,77 @@ K.M. MAHABUB HOSSAIN & $(1904017)$ \\
 \onehalfspacing
 
 \section*{Experiment Name}
-Completion of other pages and initialization of the database of ``SmartHaat" Website.
+Completion of other pages and  database of ``SmartHaat" Website.
 \section*{Objectives}
 \begin{itemize}
-\item Building Shipment and other pages.
-\item Improvements in showing data of products.
-\item Implementing database and connection establishment.
+\item Creating firm, wishlist, butchers pages.
+\item Adding firm registration, post upload etc. form.
+\item Implementing payment system.
 \end{itemize}
 \section*{Description}
-A websites compatibility and efficiency depends on quick response to the user and providing them hassle-free service. Therefore, we implemented lots of modules as card and other way instead of new pages.
+A websites compatibility and efficiency depends on quick response to the user and providing them hassle-free service as well as sellers. Therefore, we implemented pages not only containing sellers but also firms. Because, customers could easily trust well known firms. 
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=12cm]{pop_up.png}
-\caption{Pop up view of see more page}
-\label{popup}
+\includegraphics[keepaspectratio, width=12cm]{firm.jpg}
+\caption{Firms page}
+\label{firms}
 \end{figure}
-The pop-up view is created  to show the more information about the product. So, the user can browse the products without changing the page and follow its specification as well as bookmark and cart it.
 
-The shipping page includes receivers name, location, authentication and other the shipping information for an order. It is shown after confirming order. And other shipment status are shown in the user's page where they can track their previous orders too.
+As we can see in the figure \ref{firms} shows the list of firms. Therefore, we also implemented a system where users can register their farms. With necessary information, a firm can be registered and after verification it can be displayed.
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=12cm]{shipping.png}
-\caption{Shipping page}
-\label{shipping}
+\includegraphics[keepaspectratio, width=12cm]{reg-firm.jpg}
+\caption{Firms registration page}
+\label{firms-reg}
 \end{figure}
-Like any other e-commerce website, our website requires a database system to track users information, seller and theirs products' information, selling status and other authenticating information. To incorporate with the Vue framework, a general database system with rest API are initialized. Where we need to create APIs to communicate from webpage with database.
+An important feature of ``SmartHaat'' website is butcher supplying system, where users can order butchers on their desired times.
 \begin{figure}[H]
 \centering
-\includegraphics[keepaspectratio, width=12cm]{db.png}
-\caption{Database initialization}
-\label{db}
+\includegraphics[keepaspectratio, width=12cm]{butcher.jpg}
+\caption{Butcher page}
+\label{butcher}
 \end{figure}
-Here the main tables to perform a static view of our website are created initially which can be seen in figure \ref{db}. It contains many tables such as products, seller, customer and login tables with necessary relations.
+Here, butcher is supplied using the nearest location possible and free time is also a necessary condition. After these conditions are met by user, we can provide butchers.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=12cm]{blog.jpg}
+\caption{Blog post page}
+\label{blog}
+\end{figure}
+
+One of the unique feature of our website was blogging system, where we could incorporate good writings of various scholars on different regards. Following figure \ref{blog} offers similar kind of feature.
+
+
+In order to add post there is a post submitting page. In figure \ref{post} it shows an inner view of blog posts where digital media such as videos, audios images as well as text can be added.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=12cm]{blogpost.jpg}
+\caption{Inner blog post page}
+\label{post}
+\end{figure}
+
+There is a wishlist page where a product can be saved which can be further be added to cart and order. The wishlist page is shown in figure \ref{wlst}, where it has product details, add to cart option and remove option.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=12cm]{wishlist.jpg}
+\caption{Wishlist page}
+\label{wlst}
+\end{figure}
+
+Finally, a good and reliable payment system can make an e-commerce website more complete. Thus, we've incorporated a payment system where COD and card payment available which are shown in figure \ref{pmnt}.
+\begin{figure}[H]
+\centering
+\includegraphics[keepaspectratio, width=12cm]{payment.jpg}
+\caption{Payment page}
+\label{pmnt}
+\end{figure}
+
+With necessary information payment is available through our website.
+
+There are more basic features we've added such as login system, improved cart and others. Also, some defects were fixed too.
+
+
+
 
 
 \section*{Development Platforms}
@@ -134,6 +173,8 @@ The frameworks and language platforms we used --
 \end{itemize}
 
 \section*{Conclusion}
-A website needs to have less distraction and in time delivery of the needs to the customer. Therefore, easy and quick responsive pages are built for our website.
-This week we improved our home page with few more functionalities and features. The shipment page took a bit of difficulty, but it was solved finally. And the database we created is in initial state and the data can't be accessed without proper APIs and that's why the actual functions are not available.
+``SmartHaat'' website offers a basic kind of e-commerce experience with some special features on am unique concept. The main goals were to provide the users expected features in a modern UI. Therefore, easy and quick responsive pages are built for our website.
+
+This week we improved various pages with more functionalities and features. The payment page took a bit of difficulty, but it was solved finally. And there are also some small unfinished tasks which could be solved. Some data can't be accessed without proper APIs and that's why some functions are not available.
+There are some server issue for which some parts don't work sometimes which also solved after many attempts.
 \end{document}
