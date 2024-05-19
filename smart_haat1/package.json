@@ -1,0 +1,76 @@
+{
+  "name": "smart_haat1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@date-io/date-fns": "^2.16.0",
+    "@date-io/dayjs": "^2.16.0",
+    "@date-io/hijri": "^2.16.1",
+    "@date-io/luxon": "^2.16.1",
+    "@date-io/moment": "^2.16.1",
+    "@mdi/font": "5.9.55",
+    "@vuepic/vue-datepicker": "^5.4.0",
+    "animate.css": "^4.1.1",
+    "axios": "^1.4.0",
+    "bootstrap-vue": "^2.23.1",
+    "core-js": "^3.8.3",
+    "jw-vue-pagination": "^1.0.3",
+    "pinia": "^2.1.4",
+    "roboto-fontface": "*",
+    "sweetalert2": "^11.7.20",
+    "v-pagination-3": "^0.1.7",
+    "vee-validate": "^4.10.8",
+    "vue": "^3.3.4",
+    "vue-router": "^4.0.3",
+    "vuetify": "^3.3.4-beta.0",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@fortawesome/fontawesome-free": "^6.4.0",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "electron": "^25.3.2",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "material-design-icons-iconfont": "^6.7.0",
+    "vue-cli-plugin-electron-builder": "^1.4.6",
+    "vue-cli-plugin-store": "~0.0.7",
+    "vue-cli-plugin-vuetify": "~2.5.8",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
