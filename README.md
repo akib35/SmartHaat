@@ -26,7 +26,7 @@ Although, there are much more aspects such as testing, evaluating, verification 
 
 Practically, our aim is to provide a complete path of development of a platform for seamless buying and selling experience for livestock. This platform is designed to cater to farmers, livestock traders, and agricultural enthusiasts.
 
-### Features 
+## Features 
 - **Product Listings:** Browse livestock listings with detailed descriptions and images.
   - **Search and Filter:** Advanced search and filtering options to find specific livestock.
   - **Shopping Cart:** Add livestock to the cart and manage purchases.
@@ -37,7 +37,7 @@ Practically, our aim is to provide a complete path of development of a platform 
 - **Payment Gateway:** Online payment system
 
 
-### Technology Stack
+## Technology Stack
 - **Front End:** Vue.js
 - **Back End:** Django, Django REST
 - **Database:** SQLite 
@@ -58,19 +58,19 @@ Practically, our aim is to provide a complete path of development of a platform 
 
 ```
 
-### Installation
-#### Prerequisites
+## Installation
+### Prerequisites
 - Node.js(12.x or higher)
 - Python(v3.8 or higher)
 - Git
 
-#### Clone the Repository
+### Clone the Repository
 ~~~bash
 git clone https://github.com/akib35/SmartHaat.git
 cd SmartHaat
 ~~~
 
-#### Back End Setup
+### Back End Setup
 1. Create a Virtual environment
 	~~~bash
 	cd smart_haat1/Django\ Api/hat
@@ -94,7 +94,7 @@ cd SmartHaat
 	python manage.py runserver
 	~~~
 
-#### Front End Setup
+### Front End Setup
 1. Navigate to the Dir
 	~~~bash
 	cd smart_haat1
@@ -108,16 +108,16 @@ cd SmartHaat
 	npm run serve
 	~~~
 
-### Usage
+## Usage
 1. Open your web browser and navigate to http://localhost:8000 for the Django admin panel.
 2. Access the Vue.js front end at http://localhost:8080.
 3. Register a new user account or login with your credentials.
 4. Browse livestock listings, add items to your cart, and proceed to checkout.
 
-### Contributing 
+## Contributing 
 This platform is developed as study or academic purpose. The aim of the course was mainly focused on the procedure of development of WebApps thus contribution to this project is limited.
 
-### License
+## License
 This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for more details.
 
 ---
