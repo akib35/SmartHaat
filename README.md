@@ -22,6 +22,7 @@ Our SmartHaat is a small web app that is developed systematically using modern w
 * Designing
 * Modeling
 * Coding
+
 Although, there are much more aspects such as testing, evaluating, verification and validation of which some parts are done partially because of the limitation in resource.
 
 Practically, our aim is to provide a complete path of development of a platform for seamless buying and selling experience for livestock. This platform is designed to cater to farmers, livestock traders, and agricultural enthusiasts.
@@ -72,41 +73,41 @@ cd SmartHaat
 
 ### Back End Setup
 1. Create a Virtual environment
-	~~~bash
-	cd smart_haat1/Django\ Api/hat
-	python -m venv env
-	source env/bin/activate 
-	~~~
+~~~bash
+cd smart_haat1/Django\ Api/hat
+python -m venv env
+source env/bin/activate 
+~~~
 2. Install dependencies
-	~~~bash
-	pip install -r requirements.txt
-	~~~
+~~~bash
+pip install -r requirements.txt
+~~~
 3. Run migrations
-	~~~bash
-	python manage.py migrate
-	~~~
+~~~bash
+python manage.py migrate
+~~~
 4. Create a superuser
-	~~~bash
-	python manage.py createsuperuser
-	~~~
+~~~bash
+python manage.py createsuperuser
+~~~
 5. Start the Django server
-	~~~bash
-	python manage.py runserver
-	~~~
+~~~bash
+python manage.py runserver
+~~~
 
 ### Front End Setup
 1. Navigate to the Dir
-	~~~bash
-	cd smart_haat1
-	~~~
+~~~bash
+cd smart_haat1
+~~~
 2. Install dependencies
-	~~~bash
-	npm install
-	~~~
+~~~bash
+npm install
+~~~
 3. Start the Vue server
-	~~~bash
-	npm run serve
-	~~~
+~~~bash
+npm run serve
+~~~
 
 ## Usage
 1. Open your web browser and navigate to http://localhost:8000 for the Django admin panel.
