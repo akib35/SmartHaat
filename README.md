@@ -1,10 +1,11 @@
 # SmartHaat - Livestock Ecommerce Platform
----
+
 Welcome to our Livestock Ecommerce Platform ***SmartHaat***, developed as part of our academic course "Internet Programming". This project is built using Vue.js for the front end and Django for the back end.
+
+---
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Technology Stack](#technology-stack)
